@@ -91,6 +91,9 @@ function App() {
       <View style={{marginTop: 12}} />
       <Button onPress={() => signOutWithKakao()} title={'카카오 로그아웃'} />
       <View style={{marginTop: 40}} />
+
+
+
     </View>
   );
 }
