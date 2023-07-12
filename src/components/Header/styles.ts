@@ -19,7 +19,7 @@ const styles = StyleSheet.create({
   },
   headerImage: {
     height: 21,
-    width: 75,
+    width: 76,
     marginLeft: 10,
   },
   centerContent: {
