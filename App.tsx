@@ -20,6 +20,10 @@ import {
   unlink,
   getProfile,
 } from '@react-native-seoul/kakao-login';
+import {createStackNavigator} from '@react-navigation/stack';
+import {NavigationContainer} from '@react-navigation/native';
+import Header from './src/components/Header/Header';
+import Footer from "./src/components/Footer/Footer";
 
 function App() {
   const [result, setResult] = useState<string>('');
@@ -68,8 +72,13 @@ function App() {
       console.log(err);
     }
   };
+
+  const Stack = createStackNavigator();
+
   return (
     <View>
+      <Header />
+
       <Text>result : {result}</Text>
       <Button
         testID="btn-login"
@@ -91,6 +100,7 @@ function App() {
       <View style={{marginTop: 12}} />
       <Button onPress={() => signOutWithKakao()} title={'카카오 로그아웃'} />
       <View style={{marginTop: 40}} />
+      <Footer/>
     </View>
   );
 }
