@@ -20,6 +20,9 @@ import {
   unlink,
   getProfile,
 } from '@react-native-seoul/kakao-login';
+
+import Footer from '../../components/Footer/Footer';
+
 import styles from './styles';
 
 const LoginScreen = () => {
@@ -92,6 +95,7 @@ const LoginScreen = () => {
       <View style={{marginTop: 12}} />
       <Button onPress={() => signOutWithKakao()} title={'카카오 로그아웃'} />
       <View style={{marginTop: 40}} />
+      <Footer />
     </View>
   );
 };
