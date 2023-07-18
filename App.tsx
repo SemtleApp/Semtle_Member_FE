@@ -1,12 +1,20 @@
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
 import React, {useCallback, useState} from 'react';
 import {
   Button,
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   Pressable,
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   SafeAreaView,
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   ScrollView,
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   StatusBar,
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   StyleSheet,
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   Text,
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   useColorScheme,
   View,
 } from 'react-native';
@@ -91,9 +99,6 @@ function App() {
       <View style={{marginTop: 12}} />
       <Button onPress={() => signOutWithKakao()} title={'카카오 로그아웃'} />
       <View style={{marginTop: 40}} />
-
-
-
     </View>
   );
 }
